@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --text-color: #595667;
+  --text-colo2: #3a3845;
+}
+
+
+.container_blok {
+  width: 100%;
+  margin: auto;
+  padding: 0 10%;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #826f6687;
+  background-color: white;
+}
+
+header a img {
+  width: 180px;
+}
+
+header .header_links {
+  display: flex;
+  gap: 35px;
+  font-size: 25px;
+}
+
+header .header_links a {
+  color: var(--text-color);
+}
+
+header .header_icons {
+  display: flex;
+  gap: 30px;
+  font-size: 25px;
+  color: #595667;
+  cursor: pointer;
+}
+
+.shopcard {
+  display: none;
+  width: 800px;
+  height: 400px;
+  padding: 20px;
+  background-color: rgb(206, 200, 176);
+  position: absolute;
+  right: 300px;
+  border-radius: 40px;
+  transition: 1s cubic-bezier(0.65, 0.06, 0.25, 1.54);
+  grid-template-columns: repeat(2, 360px);
+  grid-template-rows: repeat(4, 80px);
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.shopcard .card {
+  display: flex;
+  gap: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.shopcard .card img {
+  width: 60px;
+  height: 76px;
+  border-radius: 20px;
+}
+
+.shopcard .card .text h1 {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.shopcard .card .text p {
+  font-size: 20px;
+  /* text-align: right; */
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.linked {
+  width: 100%;
+  padding: 0 10%;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.linked a {
+  color: #595667;
+}
+
+.linked a:hover {
+  color: #000;
+}
+
+.cantiner {
+  width: 100%;
+  padding: 50px 10%;
+  display: flex;
+  gap: 50px;
+}
+
+.cantiner b {
+  font-size: 30px;
+}
+
+.cantiner .left {
+  width: 60%;
+  margin-bottom: 100px;
+}
+
+.cantiner .left .card {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.cantiner .left .card button {
+  width: 200px;
+  height: 40px;
+  background-color: var(--text-colo2);
+  color: #fff;
+}
+
+
+.cantiner .left .inputs {
+  display: grid;
+  grid-template-areas:
+    "firstN lastN"
+    "company contry"
+    "street street"
+    "town state"
+    "zip_code phone"
+    "email email"
+    "order order";
+  padding-top: 30px;
+  grid-gap: 20px;
+}
+
+.firstN {
+  grid-area: firstN;
+}
+
+.lastN {
+  grid-area: lastN;
+}
+
+.company {
+  grid-area: company
+}
+
+.contry {
+  grid-area: contry;
+}
+
+.street {
+  grid-area: street;
+}
+
+.state {
+  grid-area: state;
+}
+
+.zip_code {
+  grid-area: zip_code;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+.order {
+  grid-area: order;
+
+}
+
+textarea {
+  height: 100px;
+  text-indent: 20px;
+}
+
+.email {
+  grid-area: email;
+}
+
+.cantiner .left .inputs .box {
+  display: flex;
+  flex-direction: column;
+}
+
+.cantiner .left .inputs .box input {
+  text-indent: 20px;
+  margin-top: 20px;
+}
+
+.cantiner .left .inputs input {
+  width: 100%;
+  height: 50px;
+
+}
+
+.reight {
+  width: 40%;
+}
+
+.reight .total {
+  margin-top: 40px;
+  display: flex;
+  border-top: 1px solid gray;
+  justify-content: space-between;
+}
+
+.reight .box {
+  display: flex;
+  line-height: 3;
+  justify-content: space-between;
+}
+
+.reight .box b {
+  font-size: 16px;
+}
+
+
+
+.reight .product {
+  border-bottom: 1px solid gray;
+  height: 50px;
+
+}
+
+.reight .image img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  padding: 80px 0;
+  background-color: #3a3845;
+}
+
+footer .footer_blok .moon p {
+  width: 300px;
+  font-size: 18px;
+  margin-top: 30px;
+  color: #fff;
+
+}
+
+footer .footer_blok {
+  height: 250px;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+
+footer button {
+  width: 150px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: #fff;
+  margin-top: 30px;
+}
+
+footer .links {
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+footer .links .link {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8;
+}
+
+footer .links .link a {
+  color: #fff;
+  font-size: 18px;
+}
+
+footer .item {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer .item a {
+  color: #e2e2e2;
+}

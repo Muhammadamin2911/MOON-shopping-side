@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --text-color: #595667;
+  --text-colo2: #3a3845;
+}
+
+
+.container_blok {
+  width: 100%;
+  margin: auto;
+  padding: 0 10%;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #826f6687;
+  background-color: white;
+}
+
+header a img {
+  width: 180px;
+}
+
+header .header_links {
+  display: flex;
+  gap: 35px;
+  font-size: 25px;
+}
+
+header .header_links a {
+  color: var(--text-color);
+}
+
+header .header_icons {
+  display: flex;
+  gap: 30px;
+  font-size: 25px;
+  color: #595667;
+  cursor: pointer;
+}
+
+
+.shopcard {
+  display: none;
+  width: 800px;
+  height: 400px;
+  padding: 20px;
+  background-color: rgb(206, 200, 176);
+  position: absolute;
+  right: 300px;
+  border-radius: 40px;
+  transition: 1s cubic-bezier(0.65, 0.06, 0.25, 1.54);
+  grid-template-columns: repeat(2, 360px);
+  grid-template-rows: repeat(4, 80px);
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.shopcard .card {
+  display: flex;
+  gap: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.shopcard .card img {
+  width: 60px;
+  height: 76px;
+  border-radius: 20px;
+}
+
+.shopcard .card .text h1 {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.shopcard .card .text p {
+  font-size: 20px;
+  /* text-align: right; */
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  padding: 30px 10%;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.cart {
+  width: 100%;
+  height: 30px;
+  padding: 0 10%;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.cart a {
+  color: #000;
+}
+
+.container .left {
+  width: 300px;
+
+}
+
+.container .left h3 {
+  padding: 20px 0;
+}
+
+.container .left .category {
+  padding: 25px 0;
+}
+
+.container .left .category .chek {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.container .left .category .chek p {
+  font-size: 25px;
+  margin-top: 8px;
+}
+
+.container .left .category .chek input {
+  width: 25px;
+  height: 25px;
+}
+
+.container .left .Price {
+  padding: 20px 0;
+}
+
+.container .left .Price .chek {
+  display: flex;
+  gap: 10px;
+}
+
+.container .left h2 {
+  margin-bottom: 20px;
+}
+
+.container .left .Price .chek P {
+  font-size: 25px;
+  margin-top: 8px;
+}
+
+.container .left .Price .chek input {
+  width: 25px;
+  height: 25px;
+}
+
+.container .left .color {
+  padding: 20px 0;
+}
+
+.container .left .color .chek {
+  display: flex;
+  gap: 10px;
+}
+
+.container .left .color .chek .white {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+
+.container .left .color .chek .orange {
+  width: 20px;
+  height: 20px;
+  background-color: #ff9900;
+}
+
+.container .left .color .chek .gray {
+  width: 20px;
+  height: 20px;
+  background-color: #838383;
+}
+
+.container .left .color .chek .red {
+  width: 20px;
+  height: 20px;
+  background-color: #ff0000;
+}
+
+.container .left .color .chek .green {
+  width: 20px;
+  height: 20px;
+  background-color: #00dd0f;
+}
+
+.container .left .tags .chek {
+  display: flex;
+  gap: 10px;
+}
+
+.container .left .tags {
+  padding: 20px 0;
+}
+
+.container .left .tags .chek {
+  display: flex;
+  align-items: center;
+}
+
+.container .left .tags .chek P {
+  font-size: 25px;
+  margin-top: 8px;
+}
+
+.container .left .tags .chek input {
+  width: 25px;
+  height: 25px;
+}
+
+.container .reight {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 255px);
+  justify-content: space-between;
+
+}
+
+.container .reight .card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.container .reight .card h1 {
+  font-size: 18px;
+}
+
+.container .reight .card p {
+  font-size: 16px;
+  color: var(--text-color);
+  margin-top: 15px;
+}
+
+.container .reight .card button {
+  width: 255px;
+  margin: 25px 0;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  width: 100%;
+  height: 500px;
+  padding: 80px 0;
+  background-color: #3a3845;
+}
+
+footer .footer_blok .moon p {
+  width: 300px;
+  font-size: 18px;
+  margin-top: 30px;
+  color: #fff;
+
+}
+
+footer .footer_blok {
+  height: 300px;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+
+footer button {
+  width: 150px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: #fff;
+  margin-top: 30px;
+}
+
+footer .links {
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+footer .links .link {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8;
+}
+
+footer .links .link a {
+  color: #fff;
+  font-size: 18px;
+}
+
+footer .item {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer .item a {
+  color: #e2e2e2;
+}

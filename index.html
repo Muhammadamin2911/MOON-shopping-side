@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div class="anti_robot">
+    <div class="robot_image">
+      <img src="/Images/images.png" alt="">
+    </div>
+
+    <div class="random_num">
+
+    </div>
+
+    <label for="">Iltimos yuqorida kiritilgan raqamni kiritish orqali robot emasligingizni tasdiqlang</label>
+    <input type="number" class="number">
+
+    <div class="tugma" class="tugma">
+      Tasdiqlash
+    </div>
+
+    <div class="xato">Kodni xato kiritdingiz qayta urinib koring</div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <header>
+    <a href="/"><img src="/Images/logo (2).png" alt=""></a>
+    <div class="header_links">
+      <a href="/">Home</a>
+      <a href="/shop.html" onmouseenter="open_shop()" onmouseleave="close_shop()">Shop</a>
+
+      <div class="shopcard" onmouseenter="open_shop()" onmouseleave="close_shop()">
+        <div class="card">
+          <img src="/Images/Image (24).png" alt="">
+          <div class="text">
+            <h1>Small Ecru Ceramic Compote</h1>
+            <p>$49.00</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/Images/Image (25).png" alt="">
+          <div class="text">
+            <h1>Warrick White Vase 14"</h1>
+            <p>$50.00</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/Images/Image (26).png" alt="">
+          <div class="text">
+            <h1>Porcelain Dinner Plate</h1>
+            <p>$59.00</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/Images/Image (27).png" alt="">
+          <div class="text">
+            <h1>Warrick White Vase 20</h1>
+            <p>$55.00</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/Images/Image (28).png" alt="">
+          <div class="text">
+            <h1>Rounded Dual Handled Vase</h1>
+            <p>$25.00</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/Images/Image (29).png" alt="">
+          <div class="text">
+            <h1>Marin White Dinner Plate</h1>
+            <p>$45.00</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/Images/Image (30).png" alt="">
+          <div class="text">
+            <h1>Tall Cream Ceramic Vase</h1>
+            <p>$36.00</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/Images/Image (31).png" alt="">
+          <div class="text">
+            <h1>Luana Bowl</h1>
+            <p>$41.00</p>
+          </div>
+        </div>
+      </div>
+      <a href="/About.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+
+    <div class="header_icons">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-regular fa-circle-user"></i>
+      <i class="fa-regular fa-heart"></i>
+      <i class="fa-solid fa-cart-shopping" onclick="open_karzinka()" ondblclick="close_karzinka()"></i>
+      <div class="karzinka" ondblclick="close_karzinka()">
+
+        <div class="karzinka"></div>
+        <p class="counter_display">Savatdagi mahsulotlar soni: 0</p>
+
+
+      </div>
+    </div>
+
+    <div class="bars"><i class="fa-solid fa-bars-staggered"></i>
+
+      <div class="bars_link">
+        <a href="/">Home</a>
+        <a href="/shop.html" onmouseenter="open_shop()" onmouseleave="close_shop()">Shop</a>
+        <a href="/About.html">About</a>
+        <a href="/contact.html">Contact</a>
+
+        <div class="header_icons">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-regular fa-circle-user"></i>
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-cart-shopping" onclick="open_karzinka()" ondblclick="close_karzinka()"></i>
+          <div class="karzinka" ondblclick="close_karzinka()">
+
+            <div class="karzinka"></div>
+            <p class="counter_display">Savatdagi mahsulotlar soni: 0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="banner">
+    <div class="card">
+      <div class="logo"><img src="/Images/Icon.png" alt=""></div>
+      <p>Handcrafted in Viet Nam since 1650</p>
+      <h2>BAT TRANG
+        DINNER SET</h2>
+      <button>SHOP NOW</button>
+    </div>
+  </div>
+
+
+  <div class="container_blok">
+
+
+
+    <div class="commerce">
+      <div class="card">
+        <img src="/Images/Image (19).png" alt="">
+        <b>TABLEWARE</b>
+      </div>
+      <div class="card">
+        <img src="/Images/Image (20).png" alt="">
+        <b>HOME DEKOR</b>
+      </div>
+      <div class="card">
+        <img src="/Images/Image (21).png" alt="">
+        <b>HOLIDAY</b>
+      </div>
+      <div class="card">
+        <img src="/Images/Image (22).png" alt="">
+        <b>COLLECTION</b>
+      </div>
+    </div>
+
+
+    <div class="collection">
+      <div class="collection_left">
+        <h2>Up to 40% off our Christmas collection</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam
+          neque
+          ultrices.</p>
+        <b>Shop now</b>
+      </div>
+      <div class="collection_reight">
+      </div>
+    </div>
+
+
+    <div class="sellers">
+      <h1 class="nom">SELLERS</h1>
+      <div class="container">
+      </div>
+    </div>
+
+    <div class="sinec_card">
+      <div class="text">
+        <h1>MADE IN VIET NAM SINEC 1450</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam
+          neque
+          ultrices.</p>
+        <a href="/">LEAR MORE </a>
+      </div>
+      <div class="image1"></div>
+      <div class="image2"></div>
+      <div class="text">
+        <h1>Our History</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit </p>
+        <a href="/">LEAR MORE</a>
+      </div>
+    </div>
+
+    <div class="arrivals">
+      <h1>DISCOVER NEW ARRIVALS</h1>
+      <div class="arrivals_card">
+
+      </div>
+    </div>
+
+    <div class="blog">
+      <h1>OUR BLOG</h1>
+      <div class="cards">
+        <div class="text">
+          <h1>TABLEWARE</h1>
+          <h2>THE SECRETS TO A KITCHEN ROOM</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam
+            neque ultrices.</p>
+          <a href="/">READ MORE</a>
+        </div>
+        <div class="image"><img src="/Images/Image (34).png" alt=""></div>
+      </div>
+    </div>
+
+    <div class="emails">
+      <p>Sign up for emails</p>
+      <h1>FOR NEWS, COLLECTIONS & MORE</h1>
+      <input type="email" placeholder="Enter your email address">
+      <button>SIGN UP</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer_blok">
+      <div class="moon">
+        <div class="icon"><img src="/Images/logo (3).png" alt=""></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma</p>
+        <button>GET STARTED →</button>
+      </div>
+      <hr>
+      <div class="links">
+        <div class="link">
+          <a href="/"><b>ABOUT US</b></a>
+          <a href="/">Mission</a>
+          <a href="/">Our team</a>
+          <a href="/">Awards</a>
+          <a href="/">Testimonials</a>
+          <a href="/">Privacy policy</a>
+        </div>
+        <div class="link">
+          <a href="/"><b>SERVICES</b></a>
+          <a href="/">Web design</a>
+          <a href="/">Web devolopment</a>
+          <a href="/">Mobile design</a>
+          <a href="/">UI/UX design</a>
+          <a href="/">Branding design</a>
+        </div>
+        <div class="link">
+          <a href="/"><b>PORTFOLIO</b></a>
+          <a href="/">Corporate websites</a>
+          <a href="/">E-commerce</a>
+          <a href="/">Mobile apps</a>
+          <a href="/">Landing pages</a>
+          <a href="/">UI/UX projects</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="item">
+      <a href="/">Copyright © 2023 Moon</a>
+      <hr>
+      <a href="/">All Rights Reserved</a>
+      <hr>
+      <a href="/">Terms and Conditions</a>
+      <hr>
+      <a href="/">Privacy Policy</a>
+    </div>
+
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+
+</html>
