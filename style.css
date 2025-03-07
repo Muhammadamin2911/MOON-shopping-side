@@ -58,6 +58,7 @@ body {
   cursor: pointer;
   font-weight: 700;
   text-align: center;
+  border-radius: 10px;
   font-size: 25px;
   color: red;
   user-select: none;

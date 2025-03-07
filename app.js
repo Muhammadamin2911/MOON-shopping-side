@@ -1,4 +1,4 @@
-let random = Math.floor(Math.random() * 100000000);
+let random = Math.floor(Math.random() * 1000000);
 
 const random_num = document.querySelector(".random_num");
 random_num.textContent = random;
@@ -10,7 +10,9 @@ const xato = document.querySelector(".xato");
 tugma.addEventListener("click", () => {
   if (parseInt(number.value) === random) {
     if (anti_robot) {
-      anti_robot.style.display = "flex"
+      anti_robot.style.position = "sticky"
+      anti_robot.style.display = "none"
+
       anti_robot.style.top = "-100vh"
 
     } else {
