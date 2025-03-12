@@ -7,26 +7,34 @@ const anti_robot = document.querySelector(".anti_robot");
 const tugma = document.querySelector(".tugma");
 const xato = document.querySelector(".xato");
 
+if (localStorage.getItem("antiRobotUsed") === "true") {
+  anti_robot.style.display = "none";
+}
+
 tugma.addEventListener("click", () => {
+  if (localStorage.getItem("antiRobotUsed") === "true") {
+    return;
+  }
+
   if (parseInt(number.value) === random) {
     if (anti_robot) {
-      anti_robot.style.position = "sticky"
-      anti_robot.style.display = "none"
-
-      anti_robot.style.top = "-100vh"
-
+      anti_robot.style.position = "sticky";
+      anti_robot.style.display = "none";
+      anti_robot.style.top = "-100vh";
+      localStorage.setItem("antiRobotUsed", "true");
     } else {
       console.error('Element ".anti_robot" topilmadi.');
     }
   } else {
-    if (anti_robot, random_num, xato, number) {
+    if (anti_robot && random_num && xato && number) {
       anti_robot.style.backgroundColor = "#ffb1b1";
       random_num.style.color = "white";
-      xato.style.display = "block"
-      number.value = ""
+      xato.style.display = "block";
+      number.value = "";
     }
   }
 });
+
 
 
 
